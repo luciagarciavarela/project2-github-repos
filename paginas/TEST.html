@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <title>INICIO</title>
+        <!-- enlace a nuestra hoja de java -->
+        <meta charset="utf-8">
+        <!-- enlace a nuestra hoja de estilos externa -->
+        <link rel="StyleSheet" href="estilos2.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="color-overlay"><h1 id="text-bg">BANGTAN</h1></div>
+        <h2> Acierta todas las preguntas y participa en el sorteo de fantásticos premios.</h2>
+        <h3> Datos personales:</h3>
+        <form>
+            <label for="Nombre">Nombre: </label>
+            <input type="text" id="Nombre" placeholder="Lucía">
+        
+            <label for="Apellidos">Apellidos: </label>
+            <input type="textarea" id="Apellidos" placeholder="García Varela">
+            <br>
+            <label for="Correo electronico">Correo: </label>
+            <input type="email" id="Correo electronico" placeholder="Lgieak@email.com">
+            <br>
+            <label>Situacion laboral: </label>
+            <br>
+            <input type="radio" id="est" value="Estudiando" name="sit lab">
+            <label for="est"> Estudiando</label>
+            <input type="radio" id="tra" value="Trabajando" name="sit lab">
+            <label for="tra"> Trabajando</label>
+            <br>
+            <label for="Nacionalidad">Nacionalidad: </label>
+            <select name="Nacionalidad">
+                <option value="esp">Española</option>
+                <option value="fr">Francesa</option>
+                <option value="it">Italiana</option>
+                <option value="al">Alemania</option>
+                <option value="pt">Portugal</option>
+                <option value="otra">Otra</option>
+            </select>
+        </form>
+        <form id= "testForm" onsubmit="return corregirTest()">
+            <h3>Preguntas sobre los miembros:</h3>
+
+            <label for="P1"> 1-.A quién le dijeron que NO tenía cara de idol: </label>
+            <select name="P1">
+                <option value="Jin">Jin</option>
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="V">V</option>
+                <option value="Jungkook">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <br>
+            <label for="P2"> 2-.Quién es el maknae: </label>
+            <select name="P2">
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="Jin">Jin</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="V">V</option>
+                <option value="Jungkook">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <br>
+
+            <label for="P3">3.-Quién es el más mayor de todos? </label>
+            <select name="P3">
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="Jin">Jin</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="V">V</option>
+                <option value="JungkooK">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <br>
+            <label>4-.Seleciona a los/ al miembro(s) a los que le gustan los leones: </label>
+            <br>
+            <input type="checkbox" id="Rap Monster" value="RM" name="P7">
+            <label for="RM"> Rap Monster</label>
+            <input type="checkbox" id="V" value="V" name="P7">
+            <label for="V" value="V"> V</label>
+            <input type="checkbox" id="Jin" value="Jin" name="P7">
+            <label for="Jin">Jin </label>
+            <input type="checkbox" id="Jimin" value="Jimin" name="P7">
+            <label for="Jimin">Jimin </label>
+            <input type="checkbox" id="J-Hope" value="J-Hope" name="P7">
+            <label for="J-Hope">J-Hope </label>
+            <input type="checkbox" id="Jungkook" value="Jungkook" name="P7">
+            <label for="Jungkook">Jungkook </label>
+            <input type="checkbox" id="Suga" value="Suga" name="P7">
+            <label for="Suga">Suga </label>
+            <br>
+
+            <label for="P4">5-.Cuál es llamado August D cuando actúa en solitario? </label>
+            <select name="P4">
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="Jin">Jin</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="V">V</option>
+                <option value="JungkooK">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <br>
+            <label for="P5">6-.Es conocido por tener hoyuelos:</label>
+            <select name="P5">
+                <option value="Jin">Jin</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="V">V</option>
+                <option value="JungkooK">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <br>
+            <label>7-.Seleciona a los/ al miembro(s) a los que le ofrecieron debutar en EXO: </label>
+            <br>
+            <input type="checkbox" id="RM" value="RM" name="P6">
+            <label for="Rap Monster"> Rap Monster</label>
+            <input type="checkbox" id="v" value="V" name="P6">
+            <label for="V"> V</label>
+            <input type="checkbox" id="Jin" value="Jin" name="P6">
+            <label for="Jin">Jin </label>
+            <input type="checkbox" id="Jimin" value="Jimin" name="P6">
+            <label for="Jimin">Jimin </label>
+            <input type="checkbox" id="J-Hope" value="J-Hope" name="P6">
+            <label for="J-Hope">J-Hope </label>
+            <input type="checkbox" id="Jungkook" value="Jungkook" name="P6">
+            <label for="Jungkook">Jungkook </label>
+            <input type="checkbox" id="Suga" value="Suga" name="P6">
+            <label for="Suga">Suga </label>
+
+
+            <h3>Preguntas sobre las canciones:</h3>
+            <label for="P8">8-. Canción de debut: </label>
+            <input type="text" id="P8" name="P8" placeholder="Insertar título">
+            <br>
+            <label for="P9">9-. Cómo se llama el solo de Jungkook del EP "Love Yourself:Answer": </label>
+            <input type="text" id="P9" name="P9" placeholder="Insertar título">
+            <br>
+            <label for="P10">10-.A qué EP pertenece el solo de Jimin "Lie": </label>
+            <input type="text" id="P10" name="P10" placeholder="Insertar título">
+            <br>
+            <label for="P11">11-. De que año es la canción  de Idol: </label>
+            <input type="text" id="P11" name="P11" placeholder="Inserte un año">
+            <br>
+
+            <label>12-. Cual de las siguientes no pertenece a BTS: </label>
+            <br>
+            
+            <input type="radio" id="Fake Love" value="Fake Love" name="P12">
+            <label for="Fake Love"> Fake Love</label>
+            <input type="radio" id="Make It Right" value="Make It Right" name="P12"> 
+            <label for="Make it Right"> Make It Right</label>
+            <input type="radio" id="Waiting For Love" value="Waiting For Love" name="P12">
+            <label for="Waiting For Love"> Waiting for Love </label>
+            <input type="radio" id="Stay" value="Stay" name="P12">
+            <label for="Stay"> Stay</label>
+            <br>
+            <label>13-. Cual de las siguientes artistas colabora en "Boys With Luv": </label>
+            <br>
+            
+            <input type="radio" id="ColdPlay" value="ColdPlay" name="P13">
+            <label for="ColdPlay"> ColdPlay</label>
+            <input type="radio" id="Halsey" value="Halsey" name="P13"> 
+            <label for="Halsey"> Halsey</label>
+            <input type="radio" id="Sia" value="Sia" name="P13">
+            <label for="Sia"> Sia</label>
+            <input type="radio" id="Lauv" value="Lauv" name="P13">
+            <label for="Lauv"> Lauv</label>
+            <br>
+
+            <label>14-. Cual de las siguientes artistas nunca colaboro con BTS: </label>
+            <br>
+            
+            <input type="radio" id="FL" value="Avicii" name="P14">
+            <label for="FL">Avicii</label>
+            <input type="radio" id="MIR" value="Becky G" name="P14"> 
+            <label for="MIR"> Becky G</label>
+            <input type="radio" id="WFL" value="Sia" name="P14">
+            <label for="WFL"> Sia</label>
+            <input type="radio" id="Stay" value="Nicky Minaj" name="P14">
+            <label for="Stay"> Nicky Minaj</label>
+
+            <h3>Preguntas sobre los gustos de los miembros:</h3>
+            <label for="P15">15-. Cual es el color favorito de Suga: </label>
+            <input type="text" id="P15" name="P15" placeholder="Insertar un color">
+            <br>
+            <label>16-.Que apodo le gusta a Jin: </label>
+            <br>
+            <input type="radio" id="FL" value="Jinnie" name="P16">
+            <label for="FL">Jinnie</label>
+            <input type="radio" id="MIR" value="RJ" name="P16"> 
+            <label for="MIR"> RJ</label>
+            <input type="radio" id="WFL" value="Worldwide Handsome" name="P16">
+            <label for="WFL"> Worldwide Handsome</label>
+            <input type="radio" id="Stay" value="Seokjinnie" name="P16">
+            <label for="Stay">Seokjinnie</label>
+            <br>
+            <label for="P17">17-.A que miembro le gustan los tatuajes ? </label>
+            <select name="P17">
+                <option value="Rap Monster">Rap Monster</option>
+                <option value="Jin">Jin</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="V">V</option>
+                <option value="Jungkook">Jungkook</option>
+                <option value="Jimin">Jimin</option>
+                <option value="Suga">Suga</option>
+            </select>
+            <h3>BONO:</h3>
+            <label>18-. Qué significa A.R.M.Y.: </label>
+            <br>
+            <input type="radio" id="FL" value="Adorable Representative M.C. for Youth" name="P18">
+            <label for="Adorable Representative M.C. for Youth">Adorable Representative M.C. for Youth </label>
+            <br>
+            <input type="radio" id="MIR" value="Adorable Representative for Youth" name="P18"> 
+            <label for="Adorable Representative for Youth"> Adorable Representative for Youth</label>
+            <br>
+            <input type="radio" id="WFL" value="Adorable Representative" name="P18">
+            <label for="Adorable Representative"> Adorable Representative </label>
+            <br>
+            <br>
+            <input type="checkbox" name="acuerdo" required/> <label> Acepto los términos y condiciones de la página.</label>
+            <br>
+            <input  id="guess-btn" type="submit" value="Enviar"> </input>
+        </form>
+
+
+    
+    </body>
+    <script src="script2.js"></script>
+
+</html>

@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial; 	/*Fuente del texto de toda la web*/
+	font-size: 12px;
+	color: black;
+    background-color: snow; /*Color de fondo de la web*/
+}
+*{
+	text-align: justify;
+}
+/* div contenedor principal*/
+#contenedor_principal {
+	overflow: hidden;
+	
+}
+/* div cabecera */
+#cabecera {
+	padding:5px;
+	border: 1px solid purple;
+	width:95%;
+	margin:auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+header h1 {
+    font-size: 80px;
+	text-align: center;
+	color: white;
+	
+}
+header p{
+	font-size: 10px;
+	text-align: center;
+	font-family:Lucida Handwriting;
+
+}
+/* div donde va el titulo y el párrafo texto de la cabecera*/
+#textocabecera {
+	background-color: plum;
+	
+	float: left;
+	
+}
+/* titulo de la cabecera */
+#textocabecera h1 {
+    font-size: 70px;
+	text-align: left;
+	color: rebeccaPurple;
+	
+}
+
+/* Párrafo que va en la cabecera */
+#textocabecera p{
+	text-align: left;
+	font-size: 30px;
+	color:azure;
+	padding-left: 10px;
+	
+}
+
+/*Div donde va la imagen de la cabecera*/
+
+
+#imagencabecera img{
+	width:58rem;
+	;
+}
+/***************************************************/
+/* Estilo de la barra de navegación */
+#barranavegacion {
+    overflow: hidden;
+   	padding:5px;
+    background-color: plum;
+	border: 1px solid #ccc;
+	width:95%;
+	margin:auto;
+	height:45px;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+#barranavegacion a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size: 22px;
+
+}
+
+/* Cambio de color en lon enlaces al pasar el ratón por encima */
+#barranavegacion a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*****************************************************/
+
+/*Div del cuerpo de la página*/
+#cuerpo {
+	background-color: white;
+	padding:5px;
+	border: 1px solid #ccc;
+	width:95%;
+	overflow: hidden;
+	margin:auto;
+}
+#cuerpo p {
+	margin-bottom: 30px;
+	
+}
+#cuerpo h2{
+	font-family:Lucida Handwriting
+}
+
+
+/* Pie de la web*/
+footer{
+	background-color: violet;
+	padding:5px;
+	border: 1px solid #ccc;
+	width:95%;
+	overflow: hidden;
+	margin:auto;
+}

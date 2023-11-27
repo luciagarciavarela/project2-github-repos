@@ -1,0 +1,74 @@
+h1 {
+    font-size: 80px;
+	text-align: center;
+	color: white;
+}
+label {
+    font-family: Arial; 	/*Fuente del texto de toda la web*/
+	font-size: 30px;
+	color: black;
+    background-color: snow; /*Color de fondo de la web*/
+}
+option {
+    font-family: Arial; 	/*Fuente del texto de toda la web*/
+	font-size: 30px;
+	color: black;
+    background-color: snow; /*Color de fondo de la web*/
+}
+h2 {
+		font-family:Lucida Handwriting;
+}
+
+input{
+	font-size: 30px;
+}
+header p{
+	font-size: 10px;
+	text-align: center;
+	font-family:Lucida Handwriting;
+
+}
+
+#contenedor_principal img{
+	width:58rem;
+	float: left;
+	padding-right: 40px;
+	padding-bottom: 40px;
+
+
+}
+/***************************************************/
+/* Estilo de la barra de navegación */
+#barranavegacion {
+    overflow: hidden;
+   	padding:5px;
+    background-color: plum;
+	border: 1px solid #ccc;
+	width:95%;
+	margin:auto;
+	height:45px;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+#barranavegacion a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size: 22px;
+
+}
+
+/* Cambio de color en lon enlaces al pasar el ratón por encima */
+#barranavegacion a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#cuerpo {
+	padding:5px;
+	width:95%;
+	overflow: hidden;
+	margin:auto;
+}
